@@ -1,0 +1,224 @@
+/* STYLE SECTIONING TAGS */
+body {
+  background-color: #90a4ae;
+}
+
+header {
+  background-image: url("assets/clouds.jpg");
+  background-color: #90a4ae;
+  background-size: cover;
+  background-position: bottom;
+  padding: 4em;
+}
+
+/* STYLE TEXT */
+a{
+  color: #263238;
+  text-decoration: underline;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+h1 {
+  color: #07090a;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  color: #07090a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  color: #07090a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.c{
+  text-align: center;
+  font-size: 12px;
+}
+
+li{
+  color: #263238;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* STYLE IMAGES */
+.icon{
+  border-radius: 50%;
+}
+
+.gif {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-style: none;
+}
+
+.img {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-style: solid;
+  border-color: #90a4ae;
+  border-width: 8px;
+  border-radius: 5px;
+}
+
+.flexpara{
+  display: flex;
+  padding: 20px;
+  width: 300%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.img1{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex_box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex_img{
+  margin: 1%;
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 850px){
+  .flex_box{
+    flex-wrap: wrap;
+  }
+}
+
+
+/* STYLE NAV BAR */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #263238;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+li.navbar {
+  float: left;
+}
+
+li.navbar a {
+  display: block;
+  color: #eceff1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+li.navbar a:hover {
+  background-color: #37474f;
+}
+
+.navlist-right{
+            float:right;
+        }
+
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+.footer{
+  color: #263238;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 40px;
+}
+
+
+.textbox{
+  background-color: #8198a3;
+  color: #263238;
+  width: 100%;
+  text-align: center;
+  border: 20px;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #8198a3;
+  color: #263238;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 20px;
+  text-align: none;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #9fb0b9;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #9fb0b9;
+}
+
+
+.space{
+  padding-bottom: 150px
+}

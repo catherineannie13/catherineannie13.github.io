@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CJ_Personal_Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+    <script src="/script.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1> Catherine Jackson </h1>
+    </header>
+    <nav>
+      <ul class="navbar">
+        <li class="navbar">
+          <a href='index.html'>Home</a>
+        </li>
+        <li class="navbar">
+          <a href='portfolio.html'>Portfolio</a>
+        </li>
+        <li class="navbar">
+          <a href='about.html'>About</a>
+        </li>
+        <div class="navlist-right">
+          <li class="navbar">
+            <a href='contact.html'>Contacts & Links</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  
+    <main>
+      <h2>
+        Modelling
+      </h2>
+      <button type="button" class="collapsible">
+        A Compartment Model for Candy Crush Player Data (King Internship)
+      </button>
+      <div class="content">
+        <p>
+          During my time with the Central Insights team at King Games, I worked on a groundbreaking data science project aimed at enhancing player data predictions for Candy Crush Saga. As the main contributor to this endeavor, I meticulously developed a sophisticated compartment model featuring over five distinct states, enabling us to predict previously unknown and future player data with high precision. My dedication to this project ensured that our simulations closely aligned with real-time series player data. Furthermore, I adapted and optimized the model for various geographical locations, offering valuable insights into player trends across different countries. It was during this internship that I acquired and refined the skill set necessary for this project, including compartment modeling, advanced modeling techniques, SQL, Google BigQuery, and proficient use of Python programming, which were instrumental in achieving remarkable results.
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        An Agent-Based Model for Simulating Spread of Covid-19
+      </button>
+      <div class="content">
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/flowchart.png" class="img">
+            <p class="c">
+              Flowchart for Training and Testing Data with sklearn
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/infections.png" class="img">
+            <p class="c">
+              Predicted Individuals Infected Over Time
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/sklearntree.png" class="img">
+            <p class="c">
+              Tree Fitted Using Training Data
+            </p>
+          </div>
+        </div>
+        <p>
+          First, I used sklearn to train and test a model for diagnosing individuals with disease based on potential indicators: temperature, WBC count, headache severity, and cough severity. I then used this information to create an agent-based model (ABM) using packages: networkx, EoN, collections. The output of this model is shown in the gif. 
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <iframe src="https://giphy.com/embed/11daG55PewCzDrptZn" class="gif" allowFullScreen></iframe>
+            <p class="c">
+              Agent-Based Model
+            </p>
+          </div>
+        </div>
+        <p>
+          See code <a href="https://github.com/catherineannie13/CS51-Algorithms-and-Simulations/blob/main/CS51%20Assignment%202%20-%20Algorithms%20and%20Simulation%20-%20Template%20Notebook%20(1).ipynb">here</a>.
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        Grocery Store Simulation
+      </button>
+      <div class="content">
+        <p>
+          For this assignment, I delved into the fascinating realm of queuing theory to address the challenge of determining the optimal number of cashiers for a grocery store. My journey began by studying the principles of queuing theory, which scrutinizes queues' formations and congestion dynamics. The goal was to find the right balance between service time, queue length, and customer numbers.
+        </p>
+        <p>
+To tackle this problem comprehensively, I combined mathematical queuing theory with simulation modeling, setting up an M/G/1 * n system, with 'n' representing the number of queues. Several variables came into play, including time of day, customer counts at each cashier, the store manager's role, and the total number of shoppers.
+        </p>
+        <p>
+The rules guiding this model were clear: the store operated from 9 am to 8 pm, customers opted for the shortest queue, and cashiers served one customer at a time. Occasionally, a customer could join the manager's queue for extended service. Key assumptions, such as exponential arrival times and normally distributed serving times, ensured the model's realism.
+        </p>
+        <p>
+To analyze the results, I calculated critical metrics like average waiting times, response times, queue lengths, and customer numbers per queue. These metrics provided insights into the system's efficiency. I compared theoretical results with empirical findings from a simulation, validating the model's accuracy.
+        </p>
+        <p>
+The outcome of this in-depth exploration was clear: having four cashiers emerged as the optimal choice. While three cashiers were acceptable, employing more than four didn't substantially enhance customer experience. This analysis equips store management with actionable recommendations to optimize resources and improve service efficiency.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/av_wait.png" class="img">
+            <p class="c">
+              Number of Servers Against Average Wait Time
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/av_queue.png" class="img">
+            <p class="c">
+              Number of Servers Against Average Queue Length
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Simulating Traffic Flow in Hyderabad, India
+      </button>
+      <div class="content">
+        <p>
+           I conducted a comprehensive traffic simulation and analysis focused on Hyderabad, India. I introduced the city's unique traffic challenges, collected data on traffic flow rates, car behaviors, and traffic light dynamics. With a foundation of variables, parameters, and rules, I built a traffic simulation model inspired by the Nagel-Schreckenberg approach. While making certain assumptions due to simplifications and limitations, I analyzed the impact of changing speed limits and traffic light intervals, recommending an 8 m/s speed limit and a reduction of traffic light intervals from 15 to 10 seconds to optimize traffic flow. Additionally, I examined traffic light queues both empirically and theoretically, offering insights into queue lengths and their alignment with queueing theory. This research serves as a valuable resource for traffic operators and policymakers seeking solutions for managing Hyderabad's complex traffic landscape.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/avflow.png" class="img">
+            <p class="c">
+              Average Traffic Flow for All Roads Across Varying Maximum Speeds 
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/avqueue.png" class="img">
+            <p class="c">
+              Average Queue Lengths Across All Traffic Lights
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Flooding Simulation for Alnwick, UK
+      </button>
+      <div class="content">
+        <p>
+          This report simulates flooding in Alnwick, England, with a focus on vulnerable flatlands known as the Alnwick Moors. The simulation covers the entire town and includes a nearby mountain. Key parameters and rules are outlined, and a mean-field approximation predicts an equilibrium flooding proportion of about 47%.
+        </p>
+        <p>
+Comparison with theoretical predictions shows reasonable alignment, especially at higher initial flooding proportions. Two flooding prevention mechanisms are explored: drainage basins and flood walls. Drainage basins are effective, reducing flooding as coverage increases, while flood walls show limited effectiveness.
+        </p>
+        <p>
+Recommendations for the Association of Drainage Authorities (ADA), UK, advise implementing drainage basins in Alnwick, with coverage balanced between effectiveness and cost. Flood walls are not recommended due to their limited impact. These recommendations consider the simulation's assumptions and may not address other water sources like tidal or river water.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/top_map.png" class="img">
+            <p class="c">
+              Topographic Map of Alnwick, UK
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/flooding.png" class="img">
+            <p class="c">
+              Proportion of Flooded Cells at Equilibrium Across Different Initial Flooding Conditions 
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2>
+        Machine Learning
+      </h2>
+      <button type="button" class="collapsible">
+        Model Selection & Data Augmentation Using VAEs and GANs for Sunset Image Classification
+      </button>
+      <div class="content">
+        <p>
+          This project addressed the binary classification problem of categorising images as either sunset or not sunset. Data augmentation was employed using generative adversarial networks (GANs) and variational autoencoders (VAEs) to expand the training set. The VAE with early stopping after 1000 training epochs yielded superior results, generating more visually accurate sunset images with less noise.
+        </p>
+        <p>
+Five models were utilised for classification: logistic regression, support vector classifier (SVC), K-nearest neighbours (KNN), decision tree, and MobileNetV2. A five-fold cross-validation and grid search were performed to determine the optimal classifier and hyperparameters. Precision was chosen as the primary metric to minimise the cost of false positives, which could lead to privacy breaches if non-sunset images were shared on a public sunset page.
+        </p>
+        <p>
+The support vector classifier with a radial basis function and C value of 10 delivered the highest validation precision score of 0.980. MobileNetV2 achieved a precision validation score of 0.944 after 10 training epochs, showing no further improvement with additional epochs.
+The SVC with the aforementioned configuration was used to report the test set performance metrics, resulting in a precision of 0.869, AUC of 0.923, and accuracy of 0.92. The confusion matrix analysis revealed 3 false negatives and 23 false positives out of 325 images.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/VAE.png" class="img">
+            <p class="c">
+              VAE Model Structure
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/GAN.png" class="img">
+            <p class="c">
+              GAN Model Structure
+            </p>
+          </div>
+        </div>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/prec_scores.png" class="img">
+            <p class="c">
+              Precision Scores for Various Models
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/Model Harness CS156 (1).png" class="img">
+            <p class="c">
+              Model Harness
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2>
+        Causal Inference
+      </h2>
+      <button type="button" class="collapsible">
+        Placebo Tests in Space & Time to Expand Methodologies of Osman & Sakib (2021)
+      </button>
+      <div class="content">
+        <p>
+          In this group project, we explored a research paper examining the effectiveness of social distancing measures in slowing the spread of COVID-19 in the United States. After replicating the paper's findings and confirming the impact of social distancing, we went further to conduct placebo tests. These tests revealed complexities in attributing effects solely to social distancing measures, emphasizing the challenges of causal inference in real-world scenarios. This project highlights the importance of critically examining research findings and considering alternative explanations in complex situations like a pandemic.
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        Decision Memo for RCT for AI Chatbot Pricing Options
+      </button>
+      <div class="content">
+        <p>
+          This decision memo outlines a strategy to maximize the conversion rates of subscriptions for Findhope's AI chatbot in countries outside of India using causal inference techniques. The proposal suggests conducting A/B testing for each country, randomly assigning individuals to two different prices based on similar chatbots' pricing in that specific country. This approach aims to manipulate pricing to observe its effect on the number of subscriptions purchased, thereby understanding the causal relationship between price and conversions.
+       </p>
+        <p>
+Given that Findhope currently operates only in India, new experiments and data collection specific to each country are proposed. The memo explains the process of A/B testing, sample size calculations, and the importance of randomization in reducing bias and ensuring accurate results. The memo also highlights the need for adjusting the pricing strategy based on the A/B test results and conducting this process in all target countries to account for economic differences.
+        </p>
+        <p>
+In conclusion, the memo recommends employing causal inference techniques and A/B testing to determine optimal pricing strategies for each country, aiming to expand access to mental health services through Findhope's AI chatbot.
+        </p>
+      </div>
+      <h2>
+        Bayesian Inference
+      </h2>
+      <button type="button" class="collapsible">
+        PyMC Models for Monthly Temperature & Rainfall in Buenos Aires
+      </button>
+      <div class="content">
+        <p>       
+In this assignment, I conducted an analysis of climate data for Buenos Aires, focusing on rainfall and temperature trends. I merged two datasets to create a new dataset that represented monthly rainfall in relation to median temperature. To model the data, I employed Bayesian statistics, using normal distributions for priors on intercepts and slopes, ensuring they encompassed the relevant information about the data. I also explored both homoscedastic and heteroscedastic models. The analysis showed that the heteroscedastic T distribution model better accounted for outliers in the data compared to the normal distribution. Cross-validation using PSIS-LOO revealed that the T cubic heteroscedastic model performed best in terms of out-of-sample predictions, highlighting its suitability for modeling climate data with varying uncertainties.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/pymc_deviance.png" class="img">
+            <p class="c">
+              Deviance of Various Models Calculated Using PyMC
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/hetero.png" class="img">
+            <p class="c">
+              Heteroscedastic Student T Model Posterior Predictive Distribution
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        PyMC Hierarchical Models for Kelp Plants
+      </button>
+      <div class="content">
+        <p>
+          In this analysis, I addressed the challenge of estimating kelp counts in missing grid cells using two modeling approaches: complete pooling and partial pooling. For complete pooling, a log-normal prior was applied to the rate parameter λ, generating a reasonable prior predictive distribution, and the model was fine-tuned to ensure good diagnostics. The posterior distribution indicated that the true λ values fall between ~178 and ~183, aligning well with the data mean. In contrast, the partial pooling model incorporated hyperpriors for μ and σ, which allowed for variation between grid cells. The resulting posterior distributions exhibited a wider range, suggesting a broader variance in kelp counts for each grid cell. Visual predictions revealed that partial pooling produced more realistic and uncertain estimates, acknowledging the actual variation in collected data. This analysis highlighted the advantages of partial pooling over complete pooling in modeling scenarios where grid cells exhibit diverse characteristics and should not be assumed identical.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/kelp_preds.png" class="img">
+            <p class="c">
+              Kelp Plant Predictions Across All Grid Cells
+            </p>
+          </div>
+        </div>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/mean_predictions_complete.png" class="img">
+            <p class="c">
+              Complete Pooling Predictions for Each Grid Cell
+            </p>
+          </div>
+        </div>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/mean_predictions_partial.png" class="img">
+            <p class="c">
+              Partial Pooling Predictions for Each Grid Cell
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Analytical Approximations for Estimating Model Evidence
+      </button>
+      <div class="content">
+        <p>
+          In this analysis, the Laplace algorithm was employed to approximate the model evidence, a challenging task when dealing with complex models and integrals. By matching the peak and covariance of the log posterior to those of a multivariate normal distribution, the Laplace approximation allowed for the estimation of the model evidence. This was achieved by comparing the unnormalized posterior to a normalized normal distribution, yielding the normalizing constant (z) and, consequently, the model evidence.
+        </p>
+        <p>
+The provided Mean-field and Full-rank ELBO values indicated differences in evidence between 12 models. To compare these models, the normalized evidence values were calculated, revealing that Degree 3 remained the best model in both Mean-field and Full-rank scenarios. Furthermore, the ratio of normalized evidence values highlighted that the Full-rank Degree 3 model was 3.53 times more likely, given the data, than the Mean-field Degree 3 model, emphasizing the superiority of the Full-rank approximation for this degree.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/model_architecture.png" class="img">
+            <p class="c">
+              Model Architecture
+            </p>
+          </div>
+          <div class="flex_img">
+            <img src="assets/norm_evidence.png" class="img">
+            <p class="c">
+              Normalised Evidence Values for Each Model
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2>
+        Software Engineering
+      </h2>
+      <button type="button" class="collapsible">
+        An Autocomplete Algorithm Using Trie Trees and Heaps
+      </button>
+      <div class="content">
+        <p>
+          I implemented a trie tree from scratch and used this to:
+        </p>
+        <ul>
+          <li>
+            Analyse the complexity of the tree.
+          </li>
+          <li>
+            Print a dictionary in alphabetical order.
+          </li>
+          <li>
+            Find the k most common words in a speech (also using heaps).
+          </li>
+          <li>
+            Implement an autocomplete algorithm with a Shakespearean dictionary (finds the most common word to which the input is a prefix).
+          </li>
+        </ul>
+        <p>
+          See code <a href="https://github.com/catherineannie13/CS110-Assignment-Trie-Trees/blob/main/Catherine_CS110_A3_Tries.ipynb">here</a>.
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        A Plagiarism Detector Using Hashing
+      </button>
+      <div class="content">
+        <p>
+          I implemented a plagiarism checker that takes 2 strings as inputs and searches for any substrings of length k that are common between the 2. I have created 2 versions, one that uses rolling hashing, the other DJB2 hashing.
+        </p>
+        <p>
+          How it works:
+        </p>
+        <ul>
+          <li>
+            The plagiarism detector takes 2 strings (X and Y) and compares substrings of length k (parameter) to find matches.
+          </li>
+          <li>
+            It first stores substrings of X in a hash table using rolling hashing to compute hash values.
+          </li>
+          <li>
+            Collisions are managed using double hashing.
+          </li>
+          <li>
+            Substrings of Y are then searched for in the hash table, again using rolling hashing to compute hash values, and double hashing to manage collisions.
+          </li>
+          <li>
+            The overall program returns the indexes in the strings X and Y at which we would find matching substrings of length k.
+          </li>
+        </ul>
+        <p>
+          See code for rolling hashing <a href="https://github.com/catherineannie13/CS110-Final-Assignment--Plagiarism-Detector/blob/main/Plagiarism%20Detector%20Using%20Rolling%20Hashing">here</a>.
+        </p>
+        <p>
+          See code for DJB2 hashing <a href="https://github.com/catherineannie13/CS110-Final-Assignment--Plagiarism-Detector/blob/main/Plagiarism%20Detector%20Using%20DJB2%20Hashing">here</a>.
+        </p>
+      </div>
+      <h2>
+        Teaching
+      </h2>
+      <button type="button" class="collapsible">
+        Girls Who Code
+      </button>
+      <div class="content">
+        <p>
+          Between my 2nd and 3rd year at university, I taught web design (Javascript, HTML, CSS) to girls aged 14-18 with Girls Who Code. I taught 3 classes of 65 girls each to create their own interactive websites and personality quizzes. I created a sisterhood in which girls felt supported and empowered to study computer science. Throughout this time, I increased my knowledge of HTML, CSS, and Javascript through debugging students’ code.
+        </p>
+        <div class="flex_box">
+          <div class="flex_img">
+            <img src="assets/GWC.jpg" class="img">
+            <p class="c">
+              Classroom Partnered with <a href= "https://www.rtx.com/">Raytheon Technologies</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Tutoring Business
+      </button>
+      <div class="content">
+        <p>
+          During my gap year between high school and university, I started a business tutoring maths and science to students aged 12-18. I started a <a href="https://www.facebook.com/catherinejacksontutor/">Facebook page</a> to market myself to potential customers. Over the course of 1.5 years, I tutored over 700 hours and effectively increased my students' exam grades. I fostered outstanding learning environments where students wanted to learn, and tutored several students with learning disabilities (dyslexia, dyscalculia, ADHD).
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer">
+        Website designed and implemented by Catherine Jackson.
+      </p>
+    </footer>
+  </body>
+</html>
